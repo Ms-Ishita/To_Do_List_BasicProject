@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1>To-Do App</h1>
+
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task..." required>
+                <button type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+
+            <div class="todos-container">
+                <ul id="task-list"></ul>
+
+                <!-- EMPTY STATE -->
+                <div class="empty-state" id="empty-state">
+                    <img src="index.jpg" alt="No tasks">
+                    <p>No tasks yet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
